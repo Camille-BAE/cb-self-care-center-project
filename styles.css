@@ -1,0 +1,113 @@
+/* font-family: 'Quicksand', sans-serif;
+COLORS
+light-yellow - #f7e4bf;
+light-blue - #78a7c6;
+dark-blue - #134d71;
+white - #ffffff;
+black - #000000;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+div {
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+/* HEADER */
+header {
+  margin: 50px 0 100px;
+  justify-content: center;
+}
+
+header img {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+}
+
+/* SECTION */
+section {
+  flex-direction: column;
+  align-items: center;
+  min-height: 555px;
+}
+
+section .box {
+  background: none;
+}
+
+section .box h2 {
+  margin-bottom: 10px;
+}
+
+.box1, .box2 {
+  margin-bottom: 100px;
+}
+
+section .box1 {
+  width: 600px;
+  min-height: 115px;
+}
+
+section .message {
+  justify-content: space-between;
+  color: #000000;
+  margin: 20px 100px;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+section .message #check {
+  border: 1px solid;
+	border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+section .message {
+  display: flex;
+  align-items: center;
+}
+
+section .box1 button {
+  background: #134d71;
+  color: #ffffff;
+  height: 30px;
+  width: 205px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+section .box2 {
+  width: 885px;
+  min-height: 165px;
+  justify-content: center;
+  align-items: center;
+}
+
+section .box2 img{
+  height: 80px;
+}
