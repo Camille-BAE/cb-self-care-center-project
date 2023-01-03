@@ -85,7 +85,6 @@ section .message #check {
 }
 
 section .message {
-  display: flex;
   align-items: center;
 }
 
