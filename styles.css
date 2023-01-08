@@ -90,6 +90,14 @@ section .message {
   align-items: center;
 }
 
+.message .affirmCitation {
+  display: none;
+}
+
+.message .mantraCitation {
+  display: none;
+}
+
 section .box1 button {
   background: #134d71;
   color: #ffffff;
