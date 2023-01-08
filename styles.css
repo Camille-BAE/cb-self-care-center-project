@@ -90,11 +90,11 @@ section .message {
   align-items: center;
 }
 
-.box2 .affirmCitation {
+.box2 .affirmMessage {
   display: none;
 }
 
-.box2 .mantraCitation {
+.box2 .mantraMessage {
   display: none;
 }
 
