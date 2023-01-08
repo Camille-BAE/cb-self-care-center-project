@@ -19,6 +19,9 @@ body {
   background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
   background-repeat: no-repeat;
   background-size: 100%;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; /* permet de cacher la bar de scroll */
 }
 
 div {
@@ -47,7 +50,6 @@ header img {
 section {
   flex-direction: column;
   align-items: center;
-  min-height: 555px;
 }
 
 section .box {
