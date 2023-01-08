@@ -77,7 +77,7 @@ section .message {
   padding-top: 20px;
 }
 
-section .message #check {
+section .message .radioMessage {
   border: 1px solid;
 	border-radius: 50px;
   height: 20px;
@@ -90,11 +90,11 @@ section .message {
   align-items: center;
 }
 
-.message .affirmCitation {
+.box2 .affirmCitation {
   display: none;
 }
 
-.message .mantraCitation {
+.box2 .mantraCitation {
   display: none;
 }
 
