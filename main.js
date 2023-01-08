@@ -8,19 +8,27 @@ const messageMan = document.querySelector('#mantraCitation');
 const buttonMessage = document.querySelector('#btnMessage');
 
 messageAff.addEventListener('click', () =>{
-  const messageAffirmation = [];
+  const affirmRandom = [];
 // document.getElementsByClassName('.affirmCitation')
-  if (affirmCiation.style.display == 'block') => {
-    affirmCitation.style.display == 'none';
-  }
-});
 
-messageMan.addEventListener('click', () =>{
-  const messageMantra = [];
 
-  if () => {
-    
-  }
+
+// Pour faire apparaître et réapparaître les messages
+//   if (affirmCitation.style.display == 'block') {
+//     affirmCitation.style.display == 'none';
+//   }else {
+//     affirmCitation.style.display == 'block';
+//   }
+// });
+
+// messageMan.addEventListener('click', () =>{
+//   const mantraRandom = [];
+
+//   if (mantraCitation.style.display == 'block') {
+//     mantraCitation.style.display =='none';
+//   }else {
+//     mantraCitation.style.display =='block'
+//   }
 });
 
 
