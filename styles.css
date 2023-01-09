@@ -90,14 +90,6 @@ section .message {
   align-items: center;
 }
 
-.box2 .affirmMessage {
-  display: none;
-}
-
-.box2 .mantraMessage {
-  display: none;
-}
-
 section .box1 button {
   background: #134d71;
   color: #ffffff;
@@ -117,6 +109,6 @@ section .box2 {
   align-items: center;
 }
 
-section .box2 img{
+section .box2 .logoZen{
   height: 80px;
 }
