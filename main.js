@@ -6,16 +6,17 @@ document.getElementById('btnMessage').onclick = function () {
   let affirmMessage = document.getElementById('affirmCitation');
   let mantraMessage = document.getElementById('mantraCitation');
 
-  if (affirmMessage.checked || mantraMessage.checked) {
-    randomMessage();
-    boxMessage.style.display = 'block';
+  if (affirmMessage.checked) {
+    affirmMessage.style.display = 'block';
+  }else if (mantraMessage.checked) {
+    mantraMessage.style.display = 'block';
   }else {
     alert(`Choisi d'abord quel type de message tu veux recevoir =)`);
   }
 };
 
-let getRandomIndex = Math.floor(Maths.random() * n);
 function randomMessage (n) {
+  let getRandomIndex = Math.floor(Maths.random(affirmMessage && mantraMessage) * n);
   let randomAffirmation = getRandomIndex(affirmMessage.length);
   let randomMantra = getRandomIndex(mantraMessage.length);
 
