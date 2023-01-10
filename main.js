@@ -5,13 +5,14 @@ let mantraMessage = [`Fais de ton mieux et n’oublie pas d’être heureux.`, `
 // let affirmMessage = document.getElementById('affirmCitation');
 // let mantraMessage = document.getElementById('mantraCitation');
 let btnMessage = document.querySelector('#btnMessage'); // <= est-ce vraiment utile ou à effacer ?
-let messageBox = document.getElementById('messageBox');
+// let messageBox = document.getElementById('messageBox');
 // let iconZen = document.getElementById('logoZen');
 
 document.getElementById('btnMessage').onclick = function () {
   let affirmMessage = document.getElementById('affirmCitation');
   let mantraMessage = document.getElementById('mantraCitation');
   let iconZen = document.getElementById('logoZen');
+  let messageBox = document.getElementById('messageBox');
 
   if (affirmMessage.checked) {
     iconZen.style.display = 'none';
@@ -22,8 +23,20 @@ document.getElementById('btnMessage').onclick = function () {
   }else {
     alert(`Choisi d'abord quel type de message tu veux recevoir`);
   }
+};
 
+document.addEventListener('click') = function randomMessage (n) {
+  let messageBox = document.getElementById('messageBox');
+  let getRandomIndex = Math.floor(Maths.random(affirmMessage && mantraMessage) * n);
+  let randomAffirmation = getRandomIndex(affirmMessage.length);
+  let randomMantra = getRandomIndex(mantraMessage.length);
 
+  if (affirmMessage.checked) {
+    messageBox.innerHTML = affirmMessage[randomAffirmation];
+  };
+  if (mantraMessage.checked) {
+    messageBox.innerHTML = mantraMessage[randomMantra];
+  };
 };
 
 
@@ -31,18 +44,7 @@ document.getElementById('btnMessage').onclick = function () {
 
 
 
-// function randomMessage (n) {
-//   let getRandomIndex = Math.floor(Maths.random(affirmMessage && mantraMessage) * n);
-//   let randomAffirmation = getRandomIndex(affirmMessage.length);
-//   let randomMantra = getRandomIndex(mantraMessage.length);
 
-//   if (affirmMessage.checked) {
-//     messageB.innerHTML = affirmMessage[randomAffirmation];
-//   };
-//   if (mantraMessage.checked) {
-//     messageBox.innerHTML = mantraMessage[randomMantra];
-//   };
-// };
 
 // Math.random();
 
