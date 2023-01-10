@@ -24,7 +24,7 @@ document.getElementById('btnMessage').onclick = function () {
   }
 };
 
-document.addEventListener('click', btnMessage) = function randomMessage (n) {
+document.addEventListener('click', function randomMessage (n) {
   let messageBox = document.getElementById('messageBox');
   let getRandomIndex = Math.floor(Maths.random(affirmMessage && mantraMessage) * n);
   let randomAffirmation = getRandomIndex(affirmMessage.length);
@@ -36,18 +36,15 @@ document.addEventListener('click', btnMessage) = function randomMessage (n) {
   if (mantraMessage.checked) {
     messageBox.innerHTML = mantraMessage[randomMantra];
   };
-};
+});
 
 
 
-
-
-
-
+// document.addEventListener("click", function(){
+//   document.getElementById("demo").innerHTML = "Hello World";
+// }); => exemple de la method trouvé sur W3school
 
 // Math.random();
-
-
 
 ////////////////////////////////////////////////////////////////////////////
 //ce que je veux :
