@@ -4,7 +4,7 @@ let mantraMessage = [`Fais de ton mieux et n’oublie pas d’être heureux.`, `
 
 // let affirmMessage = document.getElementById('affirmCitation');
 // let mantraMessage = document.getElementById('mantraCitation');
-let btnMessage = document.querySelector('#btnMessage'); // <= est-ce vraiment utile ou à effacer ?
+// let btnMessage = document.querySelector('#btnMessage'); // <= est-ce vraiment utile ou à effacer ?
 // let messageBox = document.getElementById('messageBox');
 // let iconZen = document.getElementById('logoZen');
 
