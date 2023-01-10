@@ -4,7 +4,7 @@ let mantraMessage = [`Fais de ton mieux et n’oublie pas d’être heureux.`, `
 
 // let affirmMessage = document.getElementById('affirmCitation');
 // let mantraMessage = document.getElementById('mantraCitation');
-let btnMessage = document.querySelector('#btnMessage');
+let btnMessage = document.querySelector('#btnMessage'); // <= est-ce vraiment utile ou à effacer ?
 let messageBox = document.getElementById('messageBox');
 // let iconZen = document.getElementById('logoZen');
 
@@ -15,10 +15,10 @@ document.getElementById('btnMessage').onclick = function () {
 
   if (affirmMessage.checked) {
     iconZen.style.display = 'none';
-    affirmMessage.style.display = 'block';
+    affirmMessage = 'block';
   }else if (mantraMessage.checked) {
     iconZen.style.display = 'none';
-    mantraMessage.style.display = 'block';
+    mantraMessage = 'block';
   }else {
     alert(`Choisi d'abord quel type de message tu veux recevoir`);
   }
