@@ -15,10 +15,10 @@ document.getElementById('btnMessage').onclick = function () {
 
   if (affirmMessage.checked) {
     iconZen.style.display = 'none';
-    affirmMessage = 'block';
+    // affirmMessage = 'block';
   }else if (mantraMessage.checked) {
     iconZen.style.display = 'none';
-    mantraMessage = 'block';
+    // mantraMessage = 'block';
   }else {
     alert(`Choisi d'abord quel type de message tu veux recevoir`);
   }
@@ -31,11 +31,16 @@ document.addEventListener('click', function randomMessage (n) {
   let randomMantra = getRandomIndex(mantraMessage.length);
 
   if (affirmMessage.checked) {
+    randomAffirmation = 'block';
     messageBox.innerHTML = affirmMessage[randomAffirmation];
-  };
-  if (mantraMessage.checked) {
+
+  }else if (mantraMessage.checked) {
+    randomMantra = 'block';
     messageBox.innerHTML = mantraMessage[randomMantra];
-  };
+
+  }else {
+    // 
+  }
 });
 
 
