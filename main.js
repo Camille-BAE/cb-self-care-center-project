@@ -15,8 +15,10 @@ document.getElementById('btnMessage').onclick = function () {
 
   if (affirmMessage.checked) {
     iconZen.style.display = 'none';
+    // affirmMessage = 'block';
   }else if (mantraMessage.checked) {
     iconZen.style.display = 'none';
+    // mantraMessage = 'block';
   }else {
     alert(`Choisi d'abord quel type de message tu veux recevoir`);
   }
