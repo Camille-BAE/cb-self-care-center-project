@@ -15,33 +15,12 @@ document.getElementById('btnMessage').onclick = function () {
 
   if (affirmMessage.checked) {
     iconZen.style.display = 'none';
-    // affirmMessage = 'block';
   }else if (mantraMessage.checked) {
     iconZen.style.display = 'none';
-    // mantraMessage = 'block';
   }else {
     alert(`Choisi d'abord quel type de message tu veux recevoir`);
   }
 };
-
-document.addEventListener('click', function randomMessage (n) {
-  let messageBox = document.getElementById('messageBox');
-  let getRandomIndex = Math.floor(Maths.random(affirmMessage && mantraMessage) * n);
-  let randomAffirmation = getRandomIndex(affirmMessage.length);
-  let randomMantra = getRandomIndex(mantraMessage.length);
-
-  if (affirmMessage.checked) {
-    randomAffirmation = 'block';
-    messageBox.innerHTML = affirmMessage[randomAffirmation];
-
-  }else if (mantraMessage.checked) {
-    randomMantra = 'block';
-    messageBox.innerHTML = mantraMessage[randomMantra];
-
-  }else {
-    // 
-  }
-});
 
 
 
