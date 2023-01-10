@@ -2,16 +2,19 @@ let affirmMessage = [`La vie mettra des pierres sur ta route. A toi de décider 
 
 let mantraMessage = [`Fais de ton mieux et n’oublie pas d’être heureux.`, `Je m’alimente de mots et de pensées positives.`, `Le bonheur est possible et il vaut mieux aller à sa rencontre qu'en écouter le récit.`, `Soyez heureux, agissez dans le bonheur, sentez-vous heureux, sans aucune raison.`, `Faites que le rêve dévore votre vie, afin que la vie ne dévore pas votre rêve.`, `La vie heureuse est celle qui est en accord avec sa propre nature.`, `Le vrai bonheur ne dépend d’aucun être, d’aucun objet extérieur. Il ne dépend que de nous.`, `Je suis maître de mes émotions.`, `Ce qui te manque, cherche-le dans ce que tu as.`, `Chaque jour apparaissent de nouvelles occasions dans ma vie.`];
 
-document.getElementById('btnMessage').onclick = function () {
-  let affirmMessage = document.getElementById('affirmCitation');
-  let mantraMessage = document.getElementById('mantraCitation');
+let affirmMessage = document.getElementById('affirmCitation');
+let mantraMessage = document.getElementById('mantraCitation');
+let messageBox = document.getElementById('messageBox');
+let btnMessage = document.querySelector('#btnMessage');
+let iconZen = document.getElementById('logoZen');
 
+document.getElementById('btnMessage').onclick = function () {
   if (affirmMessage.checked) {
     affirmMessage.style.display = 'block';
   }else if (mantraMessage.checked) {
     mantraMessage.style.display = 'block';
   }else {
-    alert(`Choisi d'abord quel type de message tu veux recevoir =)`);
+    alert(`Choisi d'abord quel type de message tu veux recevoir`);
   }
 };
 
@@ -21,10 +24,10 @@ function randomMessage (n) {
   let randomMantra = getRandomIndex(mantraMessage.length);
 
   if (affirmMessage.checked) {
-    boxMessage.innerHTML = affirmMessage[randomAffirmation];
+    messageB.innerHTML = affirmMessage[randomAffirmation];
   };
   if (mantraMessage.checked) {
-    boxMessage.innerHTML = mantraMessage[randomMantra];
+    messageBox.innerHTML = mantraMessage[randomMantra];
   };
 };
 

@@ -109,6 +109,6 @@ section .box2 {
   align-items: center;
 }
 
-section .box2 .logoZen{
+section .box2 #logoZen{
   height: 80px;
 }
