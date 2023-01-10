@@ -12,7 +12,6 @@ document.getElementById('btnMessage').onclick = function () {
   let affirmMessage = document.getElementById('affirmCitation');
   let mantraMessage = document.getElementById('mantraCitation');
   let iconZen = document.getElementById('logoZen');
-  let messageBox = document.getElementById('messageBox');
 
   if (affirmMessage.checked) {
     iconZen.style.display = 'none';
@@ -25,7 +24,7 @@ document.getElementById('btnMessage').onclick = function () {
   }
 };
 
-document.addEventListener('click') = function randomMessage (n) {
+document.addEventListener('click', btnMessage) = function randomMessage (n) {
   let messageBox = document.getElementById('messageBox');
   let getRandomIndex = Math.floor(Maths.random(affirmMessage && mantraMessage) * n);
   let randomAffirmation = getRandomIndex(affirmMessage.length);
